@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Melhor que height fixo */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Configurações fixas de fundo */
+    background-color: #1a1a1a; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantém o fundo parado enquanto o conteúdo rola */
+    
+    /* Imagem inicial 
+    background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80");*/
+    background-image: url("./img/default.jpg");
+    
+    /* Transição suave para a troca */
+    transition: background-image 0.8s ease-in-out;
+}
+
+
+.larger-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Um pouco mais escuro para contraste */
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%; /* Ajustado para telas pequenas */
+    max-width: 400px;
+    backdrop-filter: blur(12px); /* Desfoque um pouco mais intenso */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    text-align: center; /* Centraliza o conteúdo interno */
+}
+
+
+.search-box {
+    display: flex; 
+    gap: 10px;
+}
+
+
+.input-city {
+    flex: 1; 
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.button-search {
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;    
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.button-search:hover {
+    transform: scale(1.1);
+}
+
+.img-search {
+    width: 20px;
+}
+
+.medium-box {
+    margin-top: 30px;
+}
+
+.city {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600; /* Removido o 'px' que era erro de sintaxe */
+}
+
+.temp-display {
+    font-size: 48px; /* Temperatura maior para destaque */
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.small-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o ícone e a descrição */
+    margin-top: 15px;
+}
+
+.weather-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.text-description {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 18px;
+    text-transform: capitalize; /* Deixa a primeira letra maiúscula */
+}
+
+.humidity {
+    color: #ffffff;
+    margin-top: 20px;
+}
