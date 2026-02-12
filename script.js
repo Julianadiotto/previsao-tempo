@@ -2,13 +2,13 @@
 const API_KEY = "74cc569b2597cff3b00062cc6e0317ca"; // chave da API.
 
 const imgFundo = {
-    "Clear": "./img/clear.webp",
-    "Clouds": "./img/clouds.webp",
+    "Clear": "./img/clear.jpeg",
+    "Clouds": "./img/clouds.jpeg",
     "Rain": "./img/rain.jpeg",
     "Snow": "./img/snow.jpeg",
     "Thunderstorm": "./img/thunderstorm.jpeg",
     "Mist": "./img/mist.jpeg",
-    "Default": "./img/default.webp"
+    "Default": "./img/default.jpeg"
 };
 
 // Referências aos elementos HTML
